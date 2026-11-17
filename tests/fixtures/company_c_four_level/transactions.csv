@@ -1,0 +1,3 @@
+transaction_ref,net_amount,iso_currency,invoice_day,vendor_code,vendor_display,sku,sku_description,details
+F001,250.00,USD,2026-01-05,V-7,Acme Supply,IT-1,Notebook computer,notebook laptop computer
+F002,9.99,USD,2026-01-06,,,IT-2,Floor detergent,cleaning detergent floor

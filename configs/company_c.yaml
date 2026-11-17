@@ -1,0 +1,29 @@
+# Template only: the blind files and their schema are not available yet.
+company: C
+mode: generic
+template_only: true
+base_currency: USD
+
+files:
+  transactions: REPLACE_WITH_TRANSACTION_FILE_PATH
+  taxonomy: REPLACE_WITH_TAXONOMY_FILE_PATH
+
+generic:
+  record_id_column: REPLACE_WITH_RECORD_ID_COLUMN
+  amount_column: REPLACE_WITH_AMOUNT_COLUMN
+  currency_column: REPLACE_WITH_CURRENCY_COLUMN
+  date_column: null
+  transaction_rate_column: null
+  supplier_id_column: null
+  supplier_name_column: null
+  item_id_column: null
+  item_description_column: null
+  text_columns: []
+  taxonomy_columns: []
+  default_include: 1
+  # Optional monthly FX mapping, if C provides an FX table:
+  # monthly_fx:
+  #   source: fx_rates
+  #   currency_column: currency
+  #   month_column: month
+  #   rate_column: units_per_usd

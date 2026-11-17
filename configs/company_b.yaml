@@ -1,0 +1,19 @@
+company: B
+
+base_currency: USD
+
+files:
+  invoice_lines: data/company_b/invoice_lines.csv
+  fx_rates: data/company_b/fx_rates_usd.csv
+  taxonomy: data/company_b/taxonomy_B.csv
+  labels: data/company_b/seed_labels.csv
+
+company_b:
+  amount_column: line_amount
+  currency_column: currency
+  rate_column: currency_rate
+  invoice_date_column: invoice_date
+
+  fx_currency_column: currency
+  fx_month_column: month
+  fx_rate_column: units_per_usd

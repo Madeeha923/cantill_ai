@@ -1,0 +1,22 @@
+company: SYNTHETIC_C3
+mode: generic
+base_currency: USD
+files:
+  transactions: tests/fixtures/company_c_three_level/transactions.csv
+  taxonomy: tests/fixtures/company_c_three_level/taxonomy.csv
+generic:
+  record_id_column: row_key
+  amount_column: amount_local
+  currency_column: currency_code
+  date_column: null
+  supplier_id_column: null
+  supplier_name_column: null
+  item_id_column: null
+  item_description_column: null
+  text_columns:
+    - description_text
+  taxonomy_columns:
+    - level_one
+    - level_two
+    - level_three
+  default_include: 1

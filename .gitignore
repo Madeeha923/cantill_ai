@@ -1,0 +1,46 @@
+﻿
+# Raw input data
+/data/
+data/
+
+# Generated outputs and evaluation artifacts
+outputs/
+submission/
+
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Python packaging
+*.egg-info/
+dist/
+build/
+
+# Testing and coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE and editor files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db

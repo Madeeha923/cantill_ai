@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cantill-spend-intelligence"
+version = "0.1.0"
+description = "Config-driven procurement spend normalization and classification pipeline"
+requires-python = ">=3.10"
+dependencies = ["pandas>=2.1", "scikit-learn>=1.3", "PyYAML>=6.0", "matplotlib>=3.7"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
