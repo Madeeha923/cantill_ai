@@ -34,8 +34,8 @@ build/
 .coverage
 htmlcov/
 
-# Jupyter
-.ipynb_checkpoints/
+# # Jupyter
+# .ipynb_checkpoints/
 
 # IDE and editor files
 .vscode/
