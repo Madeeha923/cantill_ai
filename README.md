@@ -31,7 +31,7 @@ I divided the work into a few main steps:
 ## Project Structure
 
 ```text
-cantill_ai/
+cantill-spend-intelligence/
 │
 ├── configs/                 # Company-specific configuration files
 ├── data/                    # Local input data (not committed to Git)
