@@ -1,29 +1,36 @@
-# Template only: the blind files and their schema are not available yet.
+
 company: C
 mode: generic
-template_only: true
 base_currency: USD
 
 files:
-  transactions: REPLACE_WITH_TRANSACTION_FILE_PATH
-  taxonomy: REPLACE_WITH_TAXONOMY_FILE_PATH
+  transactions: data/company_c/invoice_lines_prepared.csv
+  taxonomy: data/company_c/category_tree_C.csv
 
 generic:
-  record_id_column: REPLACE_WITH_RECORD_ID_COLUMN
-  amount_column: REPLACE_WITH_AMOUNT_COLUMN
-  currency_column: REPLACE_WITH_CURRENCY_COLUMN
+  record_id_column: line_id
+  amount_column: line_amount_usd
+  currency_column: currency
   date_column: null
   transaction_rate_column: null
+
   supplier_id_column: null
-  supplier_name_column: null
-  item_id_column: null
-  item_description_column: null
-  text_columns: []
-  taxonomy_columns: []
+  supplier_name_column: supplier_name
+
+  item_id_column: product_service_code
+  item_description_column: product_service_description
+
+  text_columns:
+    - invoice_description
+    - product_service_code
+    - product_service_description
+    - line_description
+    - gl_account_description
+
+  taxonomy_columns:
+    - level_1
+    - level_2
+    - level_3
+    - level_4
+
   default_include: 1
-  # Optional monthly FX mapping, if C provides an FX table:
-  # monthly_fx:
-  #   source: fx_rates
-  #   currency_column: currency
-  #   month_column: month
-  #   rate_column: units_per_usd
